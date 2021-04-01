@@ -82,9 +82,9 @@ print(" 迭代器 生成器 列表解释器")
     #2 执行next(iter_dic), 将得到的值赋值给k,然后执行循环体代码
     #3 重复过程2，直到捕抓到异常 StopIteration,结束循环
 """
-dic = {"a": 1, "b": 2}
-for k in dic:
-    print(dic[k])
+# dic = {"a": 1, "b": 2}
+# for k in dic:
+#     print(dic[k])
 # 结果：
 #     1
 #     2
@@ -99,6 +99,27 @@ for k in dic:
         一次性、只能往后走，不能回退
         
 三、生成器
-1、什么是生成器
+1、什么是生成器函数
+    包含yield语句的def语句，自动地支持迭代协议，可以送回一个值，yield 语句挂起该函数并向调用者发送一个值，但是保留足够的状态以使得函数能够从它离开的地方继续。
+    生成器函数也有可能有一条return语句，总是在def 语句块的末尾，直接终止值的生成。
     
 """
+# 定义一个生成器函数
+def gensquares(N):
+    for i in range(N):
+        yield i ** 2
+
+# 调用生成器函数
+for i in gensquares(5):
+    print(i, end=" : ")  # 0 : 1 : 4 : 9 : 16 :
+    print()
+
+# 通过生成器函数获取生成器对象
+# 生成器对象有一个 __next__ 方法，可以开始这个函数，或者从它上次yield值后的地方恢复执行，
+# 在产生一系列值后，再次调用将抛出 StopIteration 异常
+x = gensquares(3)
+# print(x)  # <generator object gensquares at 0x00000233E21105E8>
+# print(x.__next__())  # 0
+# print(x.__next__())  # 2
+# print(x.__next__())  # 4
+# print(x.__next__()) # StopIteration
