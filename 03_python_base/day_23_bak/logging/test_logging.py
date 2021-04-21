@@ -9,9 +9,9 @@ logging.error("error message")
 logging.critical("critical message")
 
 # 日志级别 Logger名称 用户输出消息
-WARNING:root:warning message
-ERROR:root:error message
-CRITICAL:root:critical message
+# WARNING:root:warning message
+# ERROR:root:error message
+# CRITICAL:root:critical message
 
 """
 可见，默认情况下Python的logging模块将日志打到标准输出中，且只显示大于等于 WARNING 级别的日志，
