@@ -1,0 +1,2 @@
+2021--04--21 13:56:26 test_logging.py[line:284] INFO       logger1 info message
+2021--04--21 13:56:46 test_logging.py[line:284] INFO       logger1 info message

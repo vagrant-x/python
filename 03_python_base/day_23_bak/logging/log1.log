@@ -1,0 +1,5 @@
+2021-04-21 10:03:25 test_logging.py[line:28] DEBUG debug message
+2021-04-21 10:03:25 test_logging.py[line:29] INFO info message
+2021-04-21 10:03:25 test_logging.py[line:30] WARNING warning message
+2021-04-21 10:03:25 test_logging.py[line:31] ERROR error message
+2021-04-21 10:03:25 test_logging.py[line:32] CRITICAL critical message

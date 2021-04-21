@@ -1,0 +1,6 @@
+2021-04-21 11:00:55,215 test_logging.py[line:103] WARNING warning message
+2021-04-21 11:00:55,215 test_logging.py[line:104] ERROR error message
+2021-04-21 11:00:55,215 test_logging.py[line:105] CRITICAL critical message
+2021--04--21 11:06:07 test_logging.py[line:106] WARNING warning message
+2021--04--21 11:06:07 test_logging.py[line:107] ERROR error message
+2021--04--21 11:06:07 test_logging.py[line:108] CRITICAL critical message
