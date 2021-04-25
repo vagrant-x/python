@@ -39,11 +39,11 @@ os.path.getmtime(path)  返回path所指向的文件或者目录的最后修改�
 import os
 
 # 获取当前工作目录，即当前python脚本工作的目录路径
-print(os.getcwd())  # D:\08_python\02_workspace\resposities\python_base\03_python_base\day22\test_module\os
+print(os.getcwd())  # D:\08_python\02_workspace\resposities\python_base\03_python_base\day22\re\os
 
 # 改变当前脚本工作目录，相当于shell下cd
 os.chdir("testdir")
-print(os.getcwd())  # D:\08_python\02_workspace\resposities\python_base\03_python_base\day22\test_module\os\testdir
+print(os.getcwd())  # D:\08_python\02_workspace\resposities\python_base\03_python_base\day22\re\os\testdir
 
 # 返回当前目录：.
 print(os.curdir)  # .

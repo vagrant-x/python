@@ -25,7 +25,7 @@ print(sys.modules)
     通过命令行执行  python3 sys_test.py param1 param2
         返回 ['sys_test.py', 'param1', 'param2'],第一个参数是文件名
     通过pycharm 运行
-        返回 ['D:/08_python/02_workspace/resposities/python_base/03_python_base/day22/test_module/sys/sys_test.py']
+        返回 ['D:/08_python/02_workspace/resposities/python_base/03_python_base/day22/re/sys/sys_test.py']
         第一个参数是绝对路径
 """
 print(sys.argv)
