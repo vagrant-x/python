@@ -37,6 +37,7 @@ while True:
                 cmd_res = "执行成功".encode(KEY_UTF8)
             cmd_length = len(cmd_res)
             cmd_length_b = struct.pack("i", cmd_length)  # 将返回内容的长短转换成4个字节的形式
+            print("发送长度 = {}".format(cmd_length))
             conn.send(cmd_length_b)  # 将长度先发送
             conn.send(cmd_res)
         except Exception as e:
