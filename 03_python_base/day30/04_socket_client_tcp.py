@@ -16,5 +16,5 @@ while True:
         break
     tcp_client.send(cmd.encode(KEY_UTF8))
     res = tcp_client.recv(KEY_BUFFER_SIZE)
-    print(res.decode(KEY_UTF8))
+    print(res.decode("gbk"))
 tcp_client.close()

@@ -32,9 +32,22 @@ while True:
                 cmd_res = res.stdout.read()
 
             # 返回命令执行结果
+            if not  cmd_res:
+                cmd_res = "执行成功".encode(KEY_UTF8)
             conn.send(cmd_res)
         except Exception as e:
             print("出现异常： {}".format(e))
             break
     conn.close()
     print("addr = {} 退出链接".format(addr))
+
+
+"""
+测试：tcp 接收端 出现粘包现象
+    执行 cd : 返回路径
+    执行 ipconfig /all : 返回所有网络配置
+    
+    结果：执行 cd 时，返回的结果小于 1024 字节，没有出现粘包现象；
+        执行 ipconfig /all 时，返回的网络配置大于1024，出现粘包现象（在执行完 ipconfig /all 后再次执行 cd , 返回的内容是网络配置的内容）
+        
+"""
