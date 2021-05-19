@@ -18,13 +18,23 @@ def get_user_data(user):
         user_data = {
             KEY_NAME: config.get(user_upper, KEY_NAME),
             KEY_PASSWORD: config.get(user_upper, KEY_PASSWORD),
-            KEY_DISK_SIZE: config.getint(user_upper, KEY_DISK_SIZE),
-            KEY_USED_SIZE: config.getint(user_upper, KEY_USED_SIZE),
+            KEY_DISK_SIZE: config.getfloat(user_upper, KEY_DISK_SIZE),
+            KEY_USED_SIZE: config.getfloat(user_upper, KEY_USED_SIZE),
         }
         return user_data
     else:
         return None
 
+
+def set_user_used_data(user, size):
+    """
+    设置用户已经使用的内存
+    """
+    config = get_config()
+    if user.upper() not in config.sections():
+        config.add_section(user.upper())
+    config.set(user.upper(), KEY_USED_SIZE, str(size))
+    set_config(config)
 
 
 def set_user_data(user, password, size):
@@ -32,7 +42,7 @@ def set_user_data(user, password, size):
     设置用户
     :param user:
     :param password:
-    :param size: 用于拥有的磁盘大小 （单位 m）
+    :param size: 用于拥有的磁盘大小 （单位 bytes）
     :return:
     """
     config = get_config()
@@ -92,3 +102,4 @@ if __name__ == '__main__':
     # config = get_config()
     # set_user_data("xu", "124", 100)
     print(get_user_data("xu1"))
+    print(set_user_used_data("xu1", 10))

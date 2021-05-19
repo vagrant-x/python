@@ -1,3 +1,255 @@
 2021-05-18 22:20:19 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
 2021-05-18 22:21:36 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
 2021-05-18 22:21:36 MainThread FTPServer.py[line:20  ] INFO       启动 FTP 服务
+2021-05-19 09:20:25 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 09:20:25 MainThread FTPServer.py[line:21  ] INFO       启动 FTP 服务
+2021-05-19 11:27:52 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 11:27:52 MainThread FTPServer.py[line:106 ] INFO       启动 FTP 服务
+2021-05-19 11:28:03 Thread-1 FTPServer.py[line:44  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 11:32:06 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 11:32:06 MainThread FTPServer.py[line:106 ] INFO       启动 FTP 服务
+2021-05-19 11:32:13 Thread-1 FTPServer.py[line:44  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 12:13:55 Thread-2 FTPServer.py[line:44  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 12:14:26 Thread-3 FTPServer.py[line:44  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 12:25:12 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 12:25:12 MainThread FTPServer.py[line:118 ] INFO       启动 FTP 服务
+2021-05-19 12:25:47 Thread-1 FTPServer.py[line:47  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 12:26:01 Thread-2 FTPServer.py[line:47  ] INFO       接收的头 {"option": "login", "user": "xu1", "password": "123"}
+2021-05-19 14:05:42 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 14:05:42 MainThread FTPServer.py[line:159 ] INFO       启动 FTP 服务
+2021-05-19 14:05:48 Thread-1 FTPServer.py[line:52  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 14:08:05 Thread-2 FTPServer.py[line:52  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 14:09:55 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 14:09:55 MainThread FTPServer.py[line:159 ] INFO       启动 FTP 服务
+2021-05-19 14:10:00 Thread-1 FTPServer.py[line:52  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 14:11:05 Thread-2 FTPServer.py[line:52  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 14:16:00 Thread-3 FTPServer.py[line:52  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 14:17:26 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 14:17:26 MainThread FTPServer.py[line:160 ] INFO       启动 FTP 服务
+2021-05-19 14:17:34 Thread-1 FTPServer.py[line:53  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 14:17:41 Thread-1 FTPServer.py[line:53  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 14:21:58 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 14:21:58 MainThread FTPServer.py[line:160 ] INFO       启动 FTP 服务
+2021-05-19 14:22:13 Thread-1 FTPServer.py[line:53  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 14:22:20 Thread-1 FTPServer.py[line:53  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 14:23:00 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 14:23:00 MainThread FTPServer.py[line:160 ] INFO       启动 FTP 服务
+2021-05-19 14:23:12 Thread-1 FTPServer.py[line:53  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 14:23:37 Thread-1 FTPServer.py[line:53  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 14:23:37 Thread-1 FTPServer.py[line:122 ] INFO       服务端保存文件[test_client.txt]成功
+2021-05-19 14:24:11 Thread-1 FTPServer.py[line:53  ] INFO       接收的头 {"option": "get", "filename": "test.txt"}
+2021-05-19 14:24:11 Thread-1 FTPServer.py[line:141 ] INFO       发送文件[test.txt]完成，发送大小为：1826
+2021-05-19 14:24:58 Thread-1 FTPServer.py[line:53  ] INFO       接收的头 {"option": "get", "filename": "test.txt"}
+2021-05-19 14:24:58 Thread-1 FTPServer.py[line:141 ] INFO       发送文件[test.txt]完成，发送大小为：1834
+2021-05-19 15:00:07 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 15:00:07 MainThread FTPServer.py[line:179 ] INFO       启动 FTP 服务
+2021-05-19 15:00:20 Thread-1 FTPServer.py[line:61  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 15:00:23 Thread-1 FTPServer.py[line:61  ] INFO       接收的头 {"option": "cd", "cmd": "cd"}
+2021-05-19 15:00:48 Thread-2 FTPServer.py[line:61  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 15:27:36 Thread-3 FTPServer.py[line:61  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 15:27:38 Thread-3 FTPServer.py[line:61  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 15:29:44 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 15:29:44 MainThread FTPServer.py[line:200 ] INFO       启动 FTP 服务
+2021-05-19 15:29:50 Thread-1 FTPServer.py[line:70  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 15:29:51 Thread-1 FTPServer.py[line:70  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 15:32:30 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 15:32:30 MainThread FTPServer.py[line:204 ] INFO       启动 FTP 服务
+2021-05-19 15:32:36 Thread-1 FTPServer.py[line:74  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 15:32:38 Thread-1 FTPServer.py[line:74  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 15:32:38 Thread-1 FTPServer.py[line:194 ] INFO       status = 0, msg = 
+2021-05-19 15:40:54 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 15:40:54 MainThread FTPServer.py[line:205 ] INFO       启动 FTP 服务
+2021-05-19 15:41:31 Thread-1 FTPServer.py[line:75  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 15:41:33 Thread-1 FTPServer.py[line:75  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 15:41:33 Thread-1 FTPServer.py[line:195 ] INFO       status = 0, msg = test.txt  test1.txt  test2.txt
+2021-05-19 15:59:54 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 15:59:54 MainThread FTPServer.py[line:232 ] INFO       启动 FTP 服务
+2021-05-19 16:00:13 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:00:17 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:00:17 Thread-1 FTPServer.py[line:222 ] INFO       status = 0, msg = dir1  dir2  dir3  test.txt  test1.txt  test2.txt
+2021-05-19 16:00:29 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:00:55 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir11"}
+2021-05-19 16:00:57 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:00:57 Thread-1 FTPServer.py[line:222 ] INFO       status = 0, msg = dir111
+2021-05-19 16:01:52 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:01:55 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:01:55 Thread-2 FTPServer.py[line:222 ] INFO       status = 0, msg = dir1  dir2  dir3  test.txt  test1.txt  test2.txt
+2021-05-19 16:02:03 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:02:04 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:02:04 Thread-2 FTPServer.py[line:222 ] INFO       status = 0, msg = dir11  dir12
+2021-05-19 16:06:43 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 16:06:43 MainThread FTPServer.py[line:239 ] INFO       启动 FTP 服务
+2021-05-19 16:06:56 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:06:59 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd .."}
+2021-05-19 16:07:04 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:07:04 Thread-1 FTPServer.py[line:229 ] INFO       status = 0, msg = dir1  dir2  dir3  test.txt  test1.txt  test2.txt
+2021-05-19 16:07:06 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:07:08 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:07:08 Thread-1 FTPServer.py[line:229 ] INFO       status = 0, msg = dir11  dir12
+2021-05-19 16:07:12 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir11"}
+2021-05-19 16:07:13 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:07:13 Thread-1 FTPServer.py[line:229 ] INFO       status = 0, msg = dir111
+2021-05-19 16:07:17 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd .."}
+2021-05-19 16:07:20 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd .."}
+2021-05-19 16:07:21 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:07:21 Thread-1 FTPServer.py[line:229 ] INFO       status = 0, msg = dir1  dir2  dir3  test.txt  test1.txt  test2.txt
+2021-05-19 16:26:32 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 16:26:32 MainThread FTPServer.py[line:248 ] INFO       启动 FTP 服务
+2021-05-19 16:26:45 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:26:46 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:26:46 Thread-1 FTPServer.py[line:238 ] INFO       status = 0, msg = dir1  dir2  dir3  test.txt  test1.txt  test2.txt
+2021-05-19 16:26:54 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:26:55 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:26:55 Thread-1 FTPServer.py[line:238 ] INFO       status = 0, msg = dir11  dir12
+2021-05-19 16:27:03 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 16:39:49 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 16:39:49 MainThread FTPServer.py[line:253 ] INFO       启动 FTP 服务
+2021-05-19 16:40:06 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:40:08 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:40:08 Thread-1 FTPServer.py[line:243 ] INFO       status = 0, msg = dir1  dir2  dir3  test.txt  test1.txt  test2.txt
+2021-05-19 16:40:12 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:40:12 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:40:12 Thread-1 FTPServer.py[line:243 ] INFO       status = 0, msg = dir11  dir12
+2021-05-19 16:40:19 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 16:40:19 Thread-1 FTPServer.py[line:140 ] INFO       用户总空间：100.0， 已经使用：0.0
+2021-05-19 16:41:00 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:41:06 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:41:08 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:41:08 Thread-2 FTPServer.py[line:243 ] INFO       status = 0, msg = dir11  dir12
+2021-05-19 16:41:16 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 16:41:16 Thread-2 FTPServer.py[line:140 ] INFO       用户总空间：100.0， 已经使用：0.0
+2021-05-19 16:42:30 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 16:42:30 MainThread FTPServer.py[line:253 ] INFO       启动 FTP 服务
+2021-05-19 16:42:48 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:42:50 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:43:02 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 16:43:02 Thread-1 FTPServer.py[line:140 ] INFO       用户总空间：100.0， 已经使用：0.0
+2021-05-19 16:43:52 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 16:43:52 MainThread FTPServer.py[line:253 ] INFO       启动 FTP 服务
+2021-05-19 16:44:04 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:44:08 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:44:23 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 16:44:23 Thread-1 FTPServer.py[line:140 ] INFO       用户总空间：104857600.0， 已经使用：0.0
+2021-05-19 16:44:23 Thread-1 FTPServer.py[line:164 ] INFO       服务端保存文件[test_client.txt]成功
+2021-05-19 16:51:39 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 16:51:39 MainThread FTPServer.py[line:255 ] INFO       启动 FTP 服务
+2021-05-19 16:51:48 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:51:57 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:51:58 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:51:58 Thread-1 FTPServer.py[line:245 ] INFO       status = 0, msg = dir11  dir12
+2021-05-19 16:52:04 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 16:52:04 Thread-1 FTPServer.py[line:140 ] INFO       用户总空间：104857600.0， 已经使用：1826.0
+2021-05-19 16:52:04 Thread-1 FTPServer.py[line:165 ] INFO       服务端保存文件[test_client.txt]成功
+2021-05-19 16:52:45 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:52:45 Thread-1 FTPServer.py[line:245 ] INFO       status = 0, msg = dir11  dir12  test.txt  test_client.txt
+2021-05-19 16:52:53 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "get", "filename": "test.txt"}
+2021-05-19 16:52:53 Thread-1 FTPServer.py[line:190 ] INFO       发送文件[E:\0000_Python\repositories\python_base\python_base\03_python_base\day31_FTP\MY_FTP\FTPServer\home\XU\dir1\test.txt]完成，发送大小为：1834
+2021-05-19 16:53:24 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 16:53:24 Thread-1 FTPServer.py[line:140 ] INFO       用户总空间：104857600.0， 已经使用：3652.0
+2021-05-19 16:53:24 Thread-1 FTPServer.py[line:165 ] INFO       服务端保存文件[test_client.txt]成功
+2021-05-19 16:54:07 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 16:54:07 MainThread FTPServer.py[line:255 ] INFO       启动 FTP 服务
+2021-05-19 16:54:16 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:54:19 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:54:19 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 16:54:19 Thread-1 FTPServer.py[line:245 ] INFO       status = 0, msg = dir11  dir12  test.txt  test_client.txt
+2021-05-19 16:54:31 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 16:54:31 Thread-1 FTPServer.py[line:140 ] INFO       用户总空间：7600.0， 已经使用：5478.0
+2021-05-19 16:54:31 Thread-1 FTPServer.py[line:165 ] INFO       服务端保存文件[test_client.txt]成功
+2021-05-19 16:54:34 Thread-1 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826}
+2021-05-19 16:54:34 Thread-1 FTPServer.py[line:140 ] INFO       用户总空间：7600.0， 已经使用：7304.0
+2021-05-19 16:57:40 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:57:48 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:57:54 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "get", "filename": "test.txt"}
+2021-05-19 16:57:54 Thread-2 FTPServer.py[line:190 ] INFO       发送文件[E:\0000_Python\repositories\python_base\python_base\03_python_base\day31_FTP\MY_FTP\FTPServer\home\XU\dir1\test.txt]完成，发送大小为：1834
+2021-05-19 16:58:16 Thread-2 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test.txt", "filesize": 1834}
+2021-05-19 16:58:16 Thread-2 FTPServer.py[line:140 ] INFO       用户总空间：7600.0， 已经使用：7304.0
+2021-05-19 16:59:45 Thread-3 FTPServer.py[line:76  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 16:59:47 Thread-3 FTPServer.py[line:76  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 16:59:56 Thread-3 FTPServer.py[line:76  ] INFO       接收的头 {"option": "put", "filename": "test.txt", "filesize": 1834}
+2021-05-19 16:59:56 Thread-3 FTPServer.py[line:140 ] INFO       用户总空间：7600.0， 已经使用：7304.0
+2021-05-19 17:23:22 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 17:23:22 MainThread FTPServer.py[line:265 ] INFO       启动 FTP 服务
+2021-05-19 17:23:34 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 17:23:34 MainThread FTPServer.py[line:265 ] INFO       启动 FTP 服务
+2021-05-19 17:23:56 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 17:24:17 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir2"}
+2021-05-19 17:24:18 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 17:24:18 Thread-6 FTPServer.py[line:255 ] INFO       status = 0, msg = 
+2021-05-19 17:24:25 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "put", "filename": "test.txt", "filesize": 1834, "filemd5": "42138fcf5e0bd3a27dda783161cbe254"}
+2021-05-19 17:24:25 Thread-6 FTPServer.py[line:142 ] INFO       用户总空间：7600.0， 已经使用：7304.0
+2021-05-19 17:24:53 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 17:24:53 MainThread FTPServer.py[line:265 ] INFO       启动 FTP 服务
+2021-05-19 17:24:56 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 17:25:00 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir2"}
+2021-05-19 17:25:08 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "put", "filename": "test.txt", "filesize": 1834, "filemd5": "42138fcf5e0bd3a27dda783161cbe254"}
+2021-05-19 17:25:08 Thread-6 FTPServer.py[line:142 ] INFO       用户总空间：104857600.0， 已经使用：7304.0
+2021-05-19 17:30:31 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 17:30:31 MainThread FTPServer.py[line:264 ] INFO       启动 FTP 服务
+2021-05-19 17:30:43 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 17:30:49 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir2"}
+2021-05-19 17:30:51 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 17:30:51 Thread-6 FTPServer.py[line:254 ] INFO       status = 0, msg = test.txt
+2021-05-19 17:31:16 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "put", "filename": "test.txt", "filesize": 1834, "filemd5": "42138fcf5e0bd3a27dda783161cbe254"}
+2021-05-19 17:31:16 Thread-6 FTPServer.py[line:142 ] INFO       用户总空间：104857600.0， 已经使用：7304.0
+2021-05-19 17:31:24 Thread-6 FTPServer.py[line:168 ] INFO       服务端保存文件[test.txt]成功
+2021-05-19 17:31:34 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "put", "filename": "test.txt", "filesize": 1834, "filemd5": "42138fcf5e0bd3a27dda783161cbe254"}
+2021-05-19 17:31:34 Thread-6 FTPServer.py[line:142 ] INFO       用户总空间：104857600.0， 已经使用：9138.0
+2021-05-19 17:31:48 Thread-6 FTPServer.py[line:172 ] INFO       服务端保存文件[test.txt]失败， md5校验失败
+2021-05-19 17:32:50 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "get", "filename": "test.txt"}
+2021-05-19 17:33:25 MainThread ftp_server.py[line:23  ] INFO       执行 ftp_server.py..
+2021-05-19 17:33:25 MainThread FTPServer.py[line:264 ] INFO       启动 FTP 服务
+2021-05-19 17:33:33 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 17:33:36 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir2"}
+2021-05-19 17:33:37 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 17:33:37 Thread-6 FTPServer.py[line:254 ] INFO       status = 0, msg = 
+2021-05-19 17:33:40 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd .."}
+2021-05-19 17:33:40 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 17:33:40 Thread-6 FTPServer.py[line:254 ] INFO       status = 0, msg = dir1  dir2  dir3  test.txt  test1.txt  test2.txt
+2021-05-19 17:33:42 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir1"}
+2021-05-19 17:33:43 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 17:33:43 Thread-6 FTPServer.py[line:254 ] INFO       status = 0, msg = dir11  dir12  test.txt  test_client.txt
+2021-05-19 17:33:50 Thread-6 FTPServer.py[line:77  ] INFO       接收的头 {"option": "get", "filename": "test.txt"}
+2021-05-19 17:33:50 Thread-6 FTPServer.py[line:199 ] INFO       发送文件[E:\0000_Python\repositories\python_base\python_base\03_python_base\day31_FTP\MY_FTP\FTPServer\home\XU\dir1\test.txt]完成，发送大小为：1834
+2021-05-19 18:01:44 Thread-8 FTPServer.py[line:77  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 18:01:46 Thread-8 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir2"}
+2021-05-19 18:01:47 Thread-8 FTPServer.py[line:77  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 18:01:47 Thread-8 FTPServer.py[line:254 ] INFO       status = 0, msg = 
+2021-05-19 18:02:04 Thread-8 FTPServer.py[line:77  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826, "filemd5": "c36e5e72111e9d44d679ca9e94a3411a"}
+2021-05-19 18:02:04 Thread-8 FTPServer.py[line:142 ] INFO       用户总空间：104857600.0， 已经使用：9138.0
+2021-05-19 18:02:09 Thread-8 FTPServer.py[line:168 ] INFO       服务端保存文件[test_client.txt]成功
+2021-05-19 18:02:24 Thread-8 FTPServer.py[line:77  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826, "filemd5": "c36e5e72111e9d44d679ca9e94a3411a"}
+2021-05-19 18:02:24 Thread-8 FTPServer.py[line:142 ] INFO       用户总空间：104857600.0， 已经使用：10964.0
+2021-05-19 18:02:24 Thread-8 FTPServer.py[line:168 ] INFO       服务端保存文件[test_client.txt]成功
+2021-05-19 18:02:28 Thread-12 FTPServer.py[line:77  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 18:02:35 Thread-12 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir2"}
+2021-05-19 18:02:46 Thread-12 FTPServer.py[line:77  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826, "filemd5": "c36e5e72111e9d44d679ca9e94a3411a"}
+2021-05-19 18:02:46 Thread-12 FTPServer.py[line:142 ] INFO       用户总空间：104857600.0， 已经使用：12790.0
+2021-05-19 18:02:46 Thread-12 FTPServer.py[line:168 ] INFO       服务端保存文件[test_client.txt]成功
+2021-05-19 18:03:23 Thread-12 FTPServer.py[line:77  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 18:03:23 Thread-12 FTPServer.py[line:254 ] INFO       status = 0, msg = test_client.txt
+2021-05-19 18:03:33 Thread-12 FTPServer.py[line:77  ] INFO       接收的头 {"option": "get", "filename": "test_client.txt"}
+2021-05-19 18:03:33 Thread-12 FTPServer.py[line:199 ] INFO       发送文件[E:\0000_Python\repositories\python_base\python_base\03_python_base\day31_FTP\MY_FTP\FTPServer\home\XU\dir2\test_client.txt]完成，发送大小为：1826
+2021-05-19 18:04:18 Thread-12 FTPServer.py[line:77  ] INFO       接收的头 {"option": "get", "filename": "test_client.txt"}
+2021-05-19 18:04:18 Thread-12 FTPServer.py[line:199 ] INFO       发送文件[E:\0000_Python\repositories\python_base\python_base\03_python_base\day31_FTP\MY_FTP\FTPServer\home\XU\dir2\test_client.txt]完成，发送大小为：1826
+2021-05-19 18:04:34 Thread-12 FTPServer.py[line:77  ] INFO       接收的头 {"option": "get", "filename": "test_client.txt"}
+2021-05-19 18:04:34 Thread-12 FTPServer.py[line:199 ] INFO       发送文件[E:\0000_Python\repositories\python_base\python_base\03_python_base\day31_FTP\MY_FTP\FTPServer\home\XU\dir2\test_client.txt]完成，发送大小为：1826
+2021-05-19 18:04:40 Thread-13 FTPServer.py[line:77  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 18:04:43 Thread-13 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir2"}
+2021-05-19 18:04:54 Thread-13 FTPServer.py[line:77  ] INFO       接收的头 {"option": "ls", "cmd": "ls"}
+2021-05-19 18:04:54 Thread-13 FTPServer.py[line:254 ] INFO       status = 0, msg = test_client.txt
+2021-05-19 18:04:59 Thread-13 FTPServer.py[line:77  ] INFO       接收的头 {"option": "get", "filename": "test_clinet.txt"}
+2021-05-19 18:05:18 Thread-14 FTPServer.py[line:77  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 18:05:20 Thread-14 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir2"}
+2021-05-19 18:05:28 Thread-14 FTPServer.py[line:77  ] INFO       接收的头 {"option": "get", "filename": "test_client.txt"}
+2021-05-19 18:05:28 Thread-14 FTPServer.py[line:199 ] INFO       发送文件[E:\0000_Python\repositories\python_base\python_base\03_python_base\day31_FTP\MY_FTP\FTPServer\home\XU\dir2\test_client.txt]完成，发送大小为：1826
+2021-05-19 18:06:32 Thread-15 FTPServer.py[line:77  ] INFO       接收的头 {"option": "login", "user": "xu", "password": "123"}
+2021-05-19 18:06:34 Thread-15 FTPServer.py[line:77  ] INFO       接收的头 {"option": "cd", "cmd": "cd dir2"}
+2021-05-19 18:06:44 Thread-15 FTPServer.py[line:77  ] INFO       接收的头 {"option": "put", "filename": "test_client.txt", "filesize": 1826, "filemd5": "c36e5e72111e9d44d679ca9e94a3411a"}
+2021-05-19 18:06:44 Thread-15 FTPServer.py[line:142 ] INFO       用户总空间：104857600.0， 已经使用：14616.0
+2021-05-19 18:06:44 Thread-15 FTPServer.py[line:168 ] INFO       服务端保存文件[test_client.txt]成功
+2021-05-19 18:07:22 Thread-15 FTPServer.py[line:77  ] INFO       接收的头 {"option": "put", "filename": "x64.zip", "filesize": 4118645, "filemd5": "215e61ccc568a2b2495c73cdc22fffb6"}
+2021-05-19 18:07:22 Thread-15 FTPServer.py[line:142 ] INFO       用户总空间：104857600.0， 已经使用：16442.0
+2021-05-19 18:07:25 Thread-15 FTPServer.py[line:168 ] INFO       服务端保存文件[x64.zip]成功
+2021-05-19 18:13:56 Thread-15 FTPServer.py[line:77  ] INFO       接收的头 {"option": "get", "filename": "x64.zip"}
+2021-05-19 18:13:57 Thread-15 FTPServer.py[line:199 ] INFO       发送文件[E:\0000_Python\repositories\python_base\python_base\03_python_base\day31_FTP\MY_FTP\FTPServer\home\XU\dir2\x64.zip]完成，发送大小为：4118645
