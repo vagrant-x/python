@@ -21,7 +21,8 @@ class AWindow(tk.Tk):
         user_label.pack(side=tk.LEFT)
 
         # ip 输入框
-        ip_entry = tk.Entry(self.top_frame, show=None)  # 显示成明文形式
+        ip_var = tk.StringVar(value='10.8.1.101')
+        ip_entry = tk.Entry(self.top_frame, show=None, textvariable=ip_var)  # 显示成明文形式
         ip_entry.pack(side=tk.LEFT)
 
         # 输入vid_pid 提示
@@ -29,7 +30,8 @@ class AWindow(tk.Tk):
         vpid_label.pack(side=tk.LEFT)
 
         # vid_pid 输入框
-        vpid_entry = tk.Entry(self.top_frame, show=None)  # 显示成明文形式
+        vip_pid_var = tk.StringVar(value='2b46:bc01')
+        vpid_entry = tk.Entry(self.top_frame, show=None, textvariable=vip_pid_var)  # 显示成明文形式
         vpid_entry.pack(side=tk.LEFT)
 
         f_l_btn = tk.Button(self.top_frame, text="init", width=10, command=lambda: self.btn_init_callback(ip_entry, vpid_entry))

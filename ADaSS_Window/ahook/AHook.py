@@ -1,14 +1,16 @@
 import ctypes
 import time
+import os
+from tools import filetools
 
-DLL_32_PATH_AHOOK = r"G:\test\D\ADaSS_Window\libs\ahook\Ahook.dll"
-
+ROOT_PATH = filetools.get_root_path()
 
 def call_device_by_hook(func, *args, **kwargs):
     """
     测试  20210607_钟紫怡_Ahook_usbip测试
     """
     # dll_ahook = ctypes.WinDLL(DLL_32_PATH_AHOOK)
+    DLL_32_PATH_AHOOK = os.path.join(ROOT_PATH, r"libs\ahook\Ahook.dll")
     dll_ahook = ctypes.CDLL(DLL_32_PATH_AHOOK)
     print(dll_ahook)
 

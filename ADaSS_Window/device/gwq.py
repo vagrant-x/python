@@ -1,6 +1,8 @@
 import ctypes
+import os
 from ctypes import *
 from ahook import AHook
+from tools import filetools
 
 # 定义柜外清方法名的全局变量
 gwq_funs= [
@@ -13,7 +15,8 @@ class DeviceGWQ(object):
     def __init__(self, *args, **kwargs):
         super(DeviceGWQ, self).__init__( *args, **kwargs)
         self.name = "柜外清"
-        self.DLL_64_PATH = r"G:\test\D\ADaSS_Window\libs\gwq\x86\CENT_GWQ.dll"
+        root_path = filetools.get_root_path()
+        self.DLL_64_PATH = os.path.join(root_path, r"libs\gwq\x86\CENT_GWQ.dll")
 
     def AHook_GWQ_StartKeyboard(self, *args, **kwargs):
         """
