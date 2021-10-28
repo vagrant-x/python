@@ -1,0 +1,50 @@
+body {
+    color: #333;
+}
+.bodyContainer {
+    width: 1000px;
+    margin: 0 auto;
+}
+.idrContainer {
+    margin-top: 50px;
+}
+.container {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+}
+#gwq1 {
+    top: 50;
+    left: 500;
+}
+#gwq2 {
+    top: 50;
+    left: 1000;
+}
+#idr1 {
+    top: 250;
+    left: 500;
+}
+#idr2 {
+    top: 250;
+    left: 1000;
+}
+.callBtn {
+    width: 50px;
+    height: 25px;
+    background: #44BBBB;
+    border: 1px solid #44A3BB;
+    color: #fff;
+    margin-left: 5px;
+}
+.methodSelect {
+    width: 200px;
+    height: 30px;
+}
+.nameContainer {
+    margin: 10px 0;
+}
+
+.resultDiv {
+    margin-top: 10px;
+}

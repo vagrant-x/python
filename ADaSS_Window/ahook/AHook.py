@@ -10,14 +10,14 @@ def call_device_by_hook(func, *args, **kwargs):
     测试  20210607_钟紫怡_Ahook_usbip测试
     """
     # dll_ahook = ctypes.WinDLL(DLL_32_PATH_AHOOK)
-    DLL_32_PATH_AHOOK = os.path.join(ROOT_PATH, r"libs\ahook\Ahook.dll")
+    DLL_32_PATH_AHOOK = os.path.join(ROOT_PATH, r"libs\ahook\Ahook.x86.dll")
     dll_ahook = ctypes.CDLL(DLL_32_PATH_AHOOK)
     print(dll_ahook)
 
     c1 = ctypes.c_char_p(b"2b46")
     c2 = ctypes.c_char_p(b"bc01")
     host = ctypes.c_char_p(b"10.8.1.101")
-    usb_p = ctypes.c_char_p(b"1-3.6.1")
+    usb_p = ctypes.c_char_p(b"1-3.4.1")
 
     #  选择替换
     set_res = dll_ahook.SetHook()

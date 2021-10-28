@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>USBIP测试demo</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".callBtn").click(function() {
+                    var id = $(this).parent().parent().attr("id");
+                    console.log(id);
+                    $("#" + id + " .resultDiv").text("正在调用...");
+                    var method = $(this).parent().parent().children(".methodContainer").children(".methodSelect").val();
+                    console.log(method);
+                    var url;
+                    if(id == "gwq1" || id == "gwq2") {
+                        url = "http://10.8.1.153:5000/call/gwq?id=" + id + "&method=" + method
+                    } else {
+                        url = "http://10.8.1.153:5000/call/idr?id=" + id + "&method=" + method
+                    }
+                    $.ajax({
+                        url: url,
+                        type: 'GET',
+                        success: function(result) {
+                            console.log(result);
+                            $("#" + id + " .resultDiv").text("调用结果： " + JSON.stringify(result));
+                        }
+                    })
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="bodyContainer">
+            <div class="gwqContainer">
+                <div class="container" id="gwq1">
+                    <div class="nameContainer">
+                        <span>柜外请1</span>
+                        <button class="callBtn">调用</button>
+                    </div>
+                    <div class="methodContainer">
+                        <select class="methodSelect">
+                            <option value="GWQ_StartKeyboard" selected>调用数字键盘</option>
+                            <option value="GWQ_ReadPin" >调用密码键盘</option>
+                            <option value="GWQ_StartEvaluator" >调用评价器</option>
+                        </select>
+                    </div>
+                    <div class="resultDiv"></div>
+                </div>
+                <div class="container" id=gwq2>
+                    <div class="nameContainer">
+                        <span>柜外请2</span>
+                        <button class="callBtn">调用</button>
+                    </div>
+                    <div class="methodContainer">
+                        <select class="methodSelect">
+                            <option value="GWQ_StartKeyboard" selected>调用数字键盘</option>
+                            <option value="GWQ_ReadPin" >调用密码键盘</option>
+                            <option value="GWQ_StartEvaluator" >调用评价器</option>
+                        </select>
+                    </div>
+                    <div class="resultDiv"></div>
+                </div>
+            </div>
+            <div class="idrContainer">
+                <div class="container" id="idr1">
+                    <div class="nameContainer">
+                        <span>身份证阅读器1</span>
+                        <button class="callBtn">调用</button>
+                    </div>
+                    <div class="methodContainer">
+                        <select class="methodSelect">
+                            <option value="PEU_Reader_ReadIDMsg" selected>读取身份证信息</option>
+                        </select>
+                    </div>
+                    <div class="resultDiv"></div>
+                </div>
+                <div class="container" id="idr2">
+                    <div class="nameContainer">
+                        <span>身份证阅读器2</span>
+                        <button class="callBtn">调用</button>
+                    </div>
+                    <div class="methodContainer">
+                        <select class="methodSelect">
+                            <option value="PEU_Reader_ReadIDMsg" selected>读取身份证信息</option>
+                        </select>
+                    </div>
+                    <div class="resultDiv"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

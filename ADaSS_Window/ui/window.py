@@ -118,3 +118,5 @@ if __name__ == '__main__':
     print(gwq.gwq_funs)
     aWindow = AWindow()
     aWindow.mainloop()
+
+# https://blog.csdn.net/ahilll/article/details/81531587
