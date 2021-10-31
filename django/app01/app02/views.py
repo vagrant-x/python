@@ -125,7 +125,90 @@ from app02 import models as app02_models
 #     return HttpResponse(res)
 
 
+# def add_book(request):
+#     # book_name  小写类名__跨表的属性名称
+#     res = app02_models.Publish.objects.filter(name="华山出版社").values_list("book__title", "book__price")
+#     return HttpResponse(res)
+
+
+# ===================================== 聚合查询 =================================================
+
+from django.db.models import Avg, Max, Min, Sum, Count
+
+# # 计算所有图书的平均价格
+# def add_book(request):
+#     res = app02_models.Book.objects.aggregate(Avg('price'))
+#     print(res)
+#     return HttpResponse(str(res))
+#
+# # 计算所有图书的数量、最贵价格和最便宜价格
+# def add_book(request):
+#     res = app02_models.Book.objects.aggregate(c=Count("id"), max=Max("price"), min=Min("price"))
+#     print(res)
+#     return HttpResponse(str(res))
+
+
+# annotate
+
+# # 统计每一个出版社的最便宜的书的价格：
+# def add_book(request):
+#     res = app02_models.Publish.objects.values("name").annotate(in_price=Min("book__price"))
+#     print(res)
+#     return HttpResponse("OK")
+#
+# # 统计每一本书的作者个数
+# def add_book(request):
+#     res = app02_models.Book.objects.annotate(c=Count("authors__name")).values("title", "c")
+#     print(res)
+#     return HttpResponse("OK")
+#
+# # 统计每一本以"菜"开头的书籍的作者个数
+# def add_book(request):
+#     res = app02_models.Book.objects.filter(title__startswith="菜").annotate(c=Count("authors__name")).values("title", "c")
+#     print(res)
+#     return HttpResponse("OK")
+#
+#
+# # 统计不止一个作者的图书名称
+# def add_book(request):
+#     res = app02_models.Book.objects.annotate(c=Count("authors__name")).filter(c__gt=1).values("title", "c")
+#     print(res)
+#     return HttpResponse("OK")
+
+
+# F 查询
+
+# # 查询工资大于年龄的人
+# from django.db.models import F
+# def add_book(request):
+#     res = app02_models.Emp.objects.filter(salary__gt=F("age")).values("name", "salary", "age")
+#     print(res)
+#     return HttpResponse("OK")
+#
+# # 将每一本书的价格提高1元
+# def add_book(request):
+#     res = app02_models.Book.objects.update(price=F("price") + 1)
+#     print(res)
+#     return HttpResponse("OK")
+
+
+# Q 查询
+from django.db.models import Q
+# 查询价格大于 300 或者名称以菜开头的书籍的名称和价格
 def add_book(request):
-    # book_name  小写类名__跨表的属性名称
-    res = app02_models.Publish.objects.filter(name="华山出版社").values_list("book__title", "book__price")
-    return HttpResponse(res)
+    res = app02_models.Book.objects.filter(Q(price__gte=300)| Q(title__startswith="菜")).values("title", "price")
+    print(res)
+    return HttpResponse("OK")
+
+#查询以"菜"结尾或者不是 2010 年 10 月份的书籍
+def add_book(request):
+    res = app02_models.Book.objects.filter(Q(title__endswith="菜") | ~Q(Q(pub_date__year=2010) & Q(pub_date__month=10)))
+    print(res)
+    return HttpResponse("OK")
+
+# 查询出版日期是 2004 或者 1999 年，并且书名中包含有"菜"的书籍。
+# Q 对象和关键字混合使用，Q 对象要在所有关键字的前面:
+def add_book(request):
+    res = app02_models.Book.objects.filter(Q(Q(pub_date__year=2004) | Q(pub_date__year=1999)), title__contains="菜")
+    print(res)
+    return HttpResponse("OK")

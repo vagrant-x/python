@@ -33,3 +33,24 @@ class AuthorDetail(models.Model):
     tel = models.CharField(max_length=32)
     addr = models.CharField(max_length=64)
     birthday = models.DateField()
+
+
+# =============================================================
+class Emp(models.Model):
+    name = models.CharField(max_length=12)
+    age = models.IntegerField()
+    salary = models.DecimalField(max_digits=8, decimal_places=2)
+    dep = models.CharField(max_length=32)
+    province = models.CharField(max_length=32)
+
+
+class Emps(models.Model):
+    name = models.CharField(max_length=12)
+    age = models.IntegerField()
+    salary = models.DecimalField(max_digits=8, decimal_places=2)
+    dep = models.ForeignKey("Dep", on_delete=models.CASCADE)
+    province = models.CharField(max_length=32)
+
+
+class Dep(models.Model):
+    title = models.CharField(max_length=32)
