@@ -14,8 +14,7 @@ class ArticleItem(scrapy.Item):
     author = scrapy.Field()
     avatar = scrapy.Field()
     pub_time = scrapy.Field()
+    read_count = scrapy.Field()
+    word_count = scrapy.Field()
+    like_count = scrapy.Field()
 
-# class JianshuItem(scrapy.Item):
-#     # define the fields for your item here like:
-#     # name = scrapy.Field()
-#     pass

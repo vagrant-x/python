@@ -8,6 +8,7 @@
 from itemadapter import ItemAdapter
 import pymysql
 
+
 class JianshuPipeline:
 
     def __init__(self):
